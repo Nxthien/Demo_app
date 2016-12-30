@@ -1,9 +1,8 @@
-require 'test_helper'
-
+require "test_helper"
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get root" do
   	get root_url
-  	assert_select "title", "Home | Ruby on Rails Tutorial Sample App"
+  	assert_select "title", "Ruby on Rails Tutorial Sample App"
   	assert_response :success
   end
 
